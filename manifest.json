@@ -1,0 +1,28 @@
+{
+    "name": "Youtube add blocker",
+    "description": "this extension block all ads and skip ads in youtube page.",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.youtube.com/*"
+            ],
+            "js": [
+                "addBlocker.js"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "./assert/image/adsBlock_16.png",
+        "48": "./assert/image/adsBlock_48.png",
+        "120": "./assert/image/adsBlock_96.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "./assert/image/adsBlock_16.png",
+            "48": "./assert/image/adsBlock_48.png",
+            "120": "./assert/image/adsBlock_96.png"
+        }
+    }
+}
