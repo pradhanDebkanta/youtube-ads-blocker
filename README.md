@@ -1,1 +1,1 @@
-#This is a youtube ads blocker extension, that block all ads.
+# This is a youtube ads blocker extension, that block all ads.
