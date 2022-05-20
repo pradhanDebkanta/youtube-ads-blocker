@@ -1,5 +1,5 @@
 {
-    "name": "Youtube add blocker",
+    "name": "Youtube ads blocker",
     "description": "this extension block all ads and skip ads in youtube page.",
     "version": "1.0.0",
     "manifest_version": 3,
@@ -9,7 +9,7 @@
                 "https://www.youtube.com/*"
             ],
             "js": [
-                "addBlocker.js"
+                "adsBlocker.js"
             ]
         }
     ],
