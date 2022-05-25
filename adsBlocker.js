@@ -1,15 +1,15 @@
 // "https://www.youtube.com/*"
-// data.host = "www.youtube.com"
 
 const data = {
     host: window.location.host
 };
-// console.log(chrome.runtime.onMessage.hasListeners(), "has listen")
 if (!chrome.runtime.onMessage.hasListeners()) {
     chrome.runtime.onMessage.addListener(
         (request, sender, sendResponse) => {
-            if (request.getHost)
+            if (request.getHost) {
                 sendResponse({ host: data.host });
+                return true;
+            }
         }
     )
 };
@@ -21,7 +21,7 @@ if (data.host = "www.youtube.com") {
         let addskipper = document.querySelectorAll(".ytp-ad-skip-button-slot");
         let skipperBtn = addskipper[0];
         skipperBtn?.click();
-    }, 300);
+    }, 100);
 
     // for video overlay ads block
     let inv2 = setInterval(() => {
@@ -74,4 +74,17 @@ if (data.host = "www.youtube.com") {
             });
         }
     }, 500);
+
+    // for block head ads
+    let inv8 = setInterval(() => {
+        let adsBanner = document.querySelectorAll('#masthead-ad');
+        if (adsBanner.length) {
+            adsBanner.forEach(el => {
+                el.style.display = "none";
+            });
+        }
+    }, 500);
+
+
+
 }
