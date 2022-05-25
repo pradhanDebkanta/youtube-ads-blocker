@@ -4,7 +4,7 @@
 ## step1:
     remove the extension.
 ![Build Status](/assert/image/step1.png "Remove the extension")
-![Build Status](/assert/image/step2.png =400x300 "Remove the extension")
+![Build Status](/assert/image/step2.png "Remove the extension")
 
 ## step2:
     reinstall the extension.
