@@ -1,0 +1,21 @@
+body{
+    border-radius: 10px;
+    background-color: #F9F3EE;
+    height: 70px;
+    width: 200px;
+}
+.popupContainer{
+    padding: 0px 5px;
+    border-radius: 15px;
+}
+.content1{
+    display: block;
+    font-size: 16px;
+    color: #9772FB;
+}
+.content{
+    color: #555;
+    font-size: 14px;
+    margin-top: -8px;
+    padding-bottom: 5px;
+}
