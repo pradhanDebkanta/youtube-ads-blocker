@@ -1,10 +1,23 @@
 {
     "name": "Youtube ads blocker",
     "description": "this extension block all ads and skip ads in youtube page.",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "manifest_version": 3,
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset_1",
+                "enabled": true,
+                "path": "rules.json"
+            }
+        ]
+    },
     "permissions": [
-        "tabs"
+        "tabs",
+        "webRequest",
+        "declarativeNetRequestWithHostAccess",
+        "declarativeNetRequest",
+        "declarativeNetRequestFeedback"
     ],
     "content_scripts": [
         {
