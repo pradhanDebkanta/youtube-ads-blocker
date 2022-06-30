@@ -169,19 +169,6 @@
         }
     },
     {
-        "id": 14,
-        "priority": 1,
-        "action": {
-            "type": "block"
-        },
-        "condition": {
-            "urlFilter": "https://www.google.com/*",
-            "resourceTypes": [
-                "xmlhttprequest"
-            ]
-        }
-    },
-    {
         "id": 15,
         "priority": 15,
         "action": {
@@ -267,6 +254,19 @@
         },
         "condition": {
             "urlFilter": "*://tpc.*",
+            "resourceTypes": [
+                "xmlhttprequest"
+            ]
+        }
+    },
+    {
+        "id": 22,
+        "priority": 15,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "https://pubads.g.doubleclick.net/pagead/*",
             "resourceTypes": [
                 "xmlhttprequest"
             ]

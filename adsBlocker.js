@@ -16,7 +16,7 @@ if (!chrome.runtime.onMessage.hasListeners()) {
 
 if (data.host === "www.youtube.com") {
     // for add skip purpose 
-    console.log("don't skip it");
+    // console.log("don't skip it");
     let inv1 = setInterval(() => {
         let addskipper = document.querySelectorAll(".ytp-ad-skip-button-slot");
         let skipperBtn = addskipper[0];
